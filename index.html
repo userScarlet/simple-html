@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body, html {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        font: Arial 14px;
+      }
+      .s {
+        width: 210px;
+        height: 100px;
+        background: white;
+         box-shadow: 0 0 0 3px #444, 0 0 0 6px #1f1c1c, 0 0 0 9px #444;
+        position: relative;
+        top: 30px;
+        left: 15px;
+        border-radius: 1px;
+        color: white;
+      }
+      .txt1 {
+        position: relative;
+        top: 10px;
+       
+      }
+      .txt2 {
+        position: relative;
+        top: 10px;
+      }
+      .brn {
+        width: 115px;
+        height: 45px;
+        text-align: center;
+        background: rgba(19,19,19,.87);
+        border-radius: 7px ;
+        position: relative;
+        top: 2px;
+        left: 5px;
+        color: white;
+      }
+            .brn2 {
+        width: 115px;
+        height: 45px;
+        text-align: center;
+        background: rgba(19,19,19,.87);
+        border-radius: 7px ;
+        position: relative;
+        top: 30px;
+              color: white;
+        left: 1px;
+      }
+      .l {
+        width: 5px;
+        height: 100px;
+        background: #1b1b1b;
+        position: relative;
+        top: -82px;
+        left: 118px;
+        color: white;
+      }
+      .dump {
+        width: 60px;
+        height: 90px;
+        background: rgba(19,19,19,.87);
+        position: relative;
+        top: 5px;
+         left: 17px;
+        color: white;
+        text-align-last: center;
+        border-radius: 7px;
+        
+        
+      }
+      .txt3 {
+        position: relative;
+        top: 30px; 
+        left: 0px;
+      }
+      .h {
+        color: black;
+         {
+          color: black;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <!--<script defer src="script.js"></script>-->
+  </head>
+  <body>
+    <div class="s">
+      <div class="brn" onclick="huy1()">
+        <div class="txt1">
+        Info
+           </div>
+        <div class="brn2" onclick="huy2()">
+          
+          <div class="txt2">
+             Start
+
+          <div class="l">
+            <div class="dump" onclick="huy3()">
+              <div class="txt3">
+              Time
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function huy1() {
+        alert("Tg @ipabuild")
+      }
+      function huy2() {
+        alert("Download started!")
+        alert("Downloaded 1.5/10.0")
+        alert("Downloaded 2.3/10.0")
+        alert("Downloaded 2.5/10.0")
+        alert("Downloaded 3.5/10.0")
+        alert("Downloaded 4.5/10.0")
+        alert("Downloaded 10.0/10.0")
+        alert("Installation completed!")
+      }
+      function huy3() {
+        alert("?")
+      }
+      function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+    </script>
+  </body>
+</html>
